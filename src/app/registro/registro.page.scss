@@ -1,0 +1,120 @@
+
+ion-content{
+  --background: #C7C7C9; /* Fondo general */
+}
+
+ion-card {
+  --background: #ffffff; /* Fondo general */
+  display: flex;
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  height: auto;
+  width: auto;
+  padding: 15px; 
+  border-radius: 15px;
+}
+
+ion-card-content.contrana {
+  display: flex;
+  flex-direction: column;       /* Apila los elementos verticalmente */
+  align-items: center;          /* Centra los elementos */
+  justify-content: center;      /* Centra el contenido en el eje vertical */
+  text-align: center;         /* Centra el texto dentro de los divs */  
+  color: black;
+  width: auto; /* Ajusta el ancho según tus necesidades */
+  max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+  height: 500px; /* Ajusta el alto según tus necesidades */
+  padding: 90px; /* Ajusta el padding si es necesario */
+  
+}
+
+ion-input.registro-input{
+  width: auto;                  /* Ajusta el input al 100% del ancho disponible */
+  margin-bottom: 20px;          /* Espacio entre el input y el botón */
+  border-radius: 3%;
+  
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-container ion-input {
+  border: none; /* Elimina el borde predeterminado */
+  padding: 8px; /* Ajusta el padding si es necesario */
+  border-radius: 0; /* Elimina los bordes redondeados si es necesario */
+  margin-top: 20px;
+}
+
+
+.input-container::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  height: 1px; /* Altura de la línea */
+  background: black; /* Color de la línea */
+}
+
+.card-container {
+  display: grid;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  margin-top: 40px;
+  }
+
+.registro-titulo h1 {
+  font-size: 24px;
+  margin-top: -60px;
+  margin-bottom: 20px;
+  font-weight: bold; 
+  text-align: center; 
+  color: #000000; 
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.registro-texto p {
+  font-size: 16px;              /* Tamaño del texto */
+  margin-top: 10px;         /* Espacio inferior entre texto e input */
+}
+
+ion-button.registro-button {
+  color: rgb(0, 0, 0);
+  --border-radius: 20px;
+  --padding-start: 20px;
+  --padding-end: 20px;
+  margin-top: 0px;   
+  margin-bottom: -25px;             
+}
+ion-text.registro-regresar p{
+  color:blue;
+  text-transform: capitalize;
+  margin-top: 28px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+ion-text.registro-regresar p:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Encabezado */
+.toolbar-custom {
+  --background: rgb(0, 0, 173); /* Color de fondo de la barra */
+  --color: white; /* Color del texto */
+  //text-align: center;
+}
+
+.registro-logo {
+  display: block;
+  margin: 0 auto;
+  width: 65px;
+  height: 65px;
+}
+
+
+

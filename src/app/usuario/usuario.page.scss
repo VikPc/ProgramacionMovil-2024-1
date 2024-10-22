@@ -1,0 +1,68 @@
+/* Estilos para el encabezado principal */
+ion-header {
+  background: rgba(56, 128, 255, 0.8); /* Fondo azul translúcido */
+}
+
+ion-toolbar {
+  --background: transparent; /* Hacer el toolbar transparente */
+}
+
+ion-title {
+  color: black; /* Color de texto del título */
+}
+
+/* Estilos para el contenido */
+ion-content {
+  background-color: #f4f4f4; /* Fondo claro */
+}
+
+/* Estilos para el ion-card */
+ion-card {
+  margin: 20px; /* Margen alrededor del card */
+  padding: 15px; /* Relleno interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra */
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Estilos para los elementos del formulario */
+ion-item {
+  --background: transparent; /* Fondo transparente para los items */
+}
+
+ion-label {
+  font-weight: bold; /* Hacer las etiquetas más destacadas */
+  color: #333; /* Color de texto */
+}
+
+ion-input {
+  --padding-start: 10px; /* Espaciado interno para el input */
+  --padding-end: 10px; /* Espaciado interno para el input */
+  font-size: 16px; /* Tamaño de fuente */
+  border-radius: 5px; /* Bordes redondeados */
+  --background: #f0f0f0; /* Fondo del input */
+}
+
+/* Estilos para el botón */
+ion-button {
+  margin-top: 20px; /* Margen superior para separar del input */
+  --background: #3880ff; /* Color de fondo del botón */
+  --color: black; /* Color del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilos para el spinner */
+ion-spinner {
+  margin: 20px 0; /* Margen para el spinner */
+}
+
+/* Estilos para el segundo encabezado (colapsable) */
+ion-header[collapse="condense"] {
+  --background: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+}
+
+ion-title[size="large"] {
+  font-size: 1.5em; /* Tamaño de fuente más grande */
+  color: #000; /* Color de texto negro */
+}

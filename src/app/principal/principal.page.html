@@ -1,0 +1,78 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-item class="cuestom-item" aria-placeholder="12" button (click)="navigateTo()">
+      <ion-icon name='home-outline' style="color: black; margin-right: 10px;"></ion-icon>
+      Inicio
+    </ion-item>
+    <ion-item class="cuestom-item" aria-placeholder="12" button (click)="navigateTo()">
+      <ion-icon name='receipt-outline' style="color: black; margin-right: 10px;"></ion-icon>
+      Recerva
+    </ion-item>
+    <ion-item class="cuestom-item" button (click)="navigateToMuestra()" >
+      <ion-icon name='people-circle-outline' style="color: black; margin-right: 10px;"></ion-icon>
+      Nuevos Usuario
+    </ion-item>
+  </ion-content>  
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">  
+  </ion-content>
+</div>
+
+<ion-content id="main-content">
+  <!-- Header -->
+ 
+    <ion-toolbar class="toolbar-custom">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button> <!-- Botón para abrir el menú -->
+      </ion-buttons>
+       <ion-title class="toolbar-title">Bienvenido, {{username}}</ion-title>
+    </ion-toolbar>
+
+
+  <!-- Contenedor de las tarjetas -->
+  <div class="cards-container">
+    <ion-card class="centered-card elevated-card">
+      <ion-card-header>
+        <ion-img src="assets/login1.png" alt="Pelota"></ion-img>
+        <ion-card-title>Pelota</ion-card-title>
+        <ion-card-subtitle>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos hic explicabo aliquid, reiciendis iure consequuntur delectus ullam recusandae, earum officiis exercitationem saepe facere eum voluptatum consequatur eligendi. Delectus, hic nostrum!
+        </ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card class="centered-card elevated-card">
+      <ion-card-header>
+        <ion-img src="assets/login1.png" alt="Pelota"></ion-img>
+        <ion-card-title>Tenis</ion-card-title>
+        <ion-card-subtitle>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos hic explicabo aliquid, reiciendis iure consequuntur delectus ullam recusandae, earum officiis exercitationem saepe facere eum voluptatum consequatur eligendi. Delectus, hic nostrum!
+        </ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card class="centered-card elevated-card">
+      <ion-card-header>
+        <ion-img src="assets/basque.jpeg" alt="Basketball"></ion-img>
+        <ion-card-title>Basketball</ion-card-title>
+        <ion-card-subtitle>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos hic explicabo aliquid, reiciendis iure consequuntur delectus ullam recusandae, earum officiis exercitationem saepe facere eum voluptatum consequatur eligendi. Delectus, hic nostrum!
+        </ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,147 @@
+/* Estilos Globales para el Contenido */
+.content-background {
+    --background: #CEC9CD; /* Fondo suave para el contenido */
+    padding: 20px; /* Espaciado general alrededor del contenido */
+  }
+  
+  /* Estilos para el Header */
+  ion-header {
+    background-color: #BF4539; /* Color de fondo del encabezado */
+    
+    ion-toolbar {
+        --background: #BF4539;
+
+      ion-title {
+        color: black; /* Color del texto del título */
+        font-size: 1.5rem; /* Tamaño del texto */
+        text-align: center; /* Centrar el texto del título */
+        background: #BF4539 ; /* Fondo suave para el contenido */
+      }
+    }
+  }
+  /* Estilos para las Tarjetas */
+  .registration-card,
+  .user-list-card {
+    /*margin: 10px; /* Espaciado alrededor de cada tarjeta */
+    /*border-radius: 0px; /* Bordes redondeados para las tarjetas */
+    /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    background-color: #CEC9CD; /* Fondo blanco para las tarjetas */
+  }
+  
+  /* Estilos del Contenido de la Tarjeta */
+  .registration-card ion-card-content,
+  .user-list-card ion-card-content {
+    padding: 20px; /* Espaciado interno */
+  }
+  
+  /* Estilos para el Contenedor del Botón */
+  .button-container {
+    margin: 20px; /* Espaciado para el contenedor del botón */
+    display: flex;
+    justify-content: center; /* Centra el botón */
+  }
+  
+  /* Estilos para el Texto de Redirección */
+  .redirect-text {
+    text-align: center;
+    color: #007bff; /* Color del texto del enlace */
+    //margin: 10px 0; /* Margen superior e inferior */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  }
+  
+  .redirect-text p:hover {
+    text-decoration: underline; /* Subraya el texto al pasar el mouse */
+  }
+  
+  /* Estilos para el Spinner */
+  .spinner-container {
+    text-align: center;
+    margin-top: 20px; /* Espaciado superior para el spinner */
+  }
+  
+  /* Estilos para el Listado de Usuarios */
+  ion-list {
+    margin: 20px; /* Espaciado alrededor de la lista */
+  }
+  
+  /* Estilos para cada item en la lista de usuarios */
+  ion-item {
+    --background: #CEC9CD ; /* Color de fondo suave para los items */
+    border-radius: 8px; /* Bordes redondeados para los items */
+    margin-bottom: 5px; /* Espaciado entre items */
+    transition: background-color 0.3s; /* Transición suave */
+  
+    &:hover {
+      --background: #e0e0e0; /* Color de fondo al pasar el mouse */
+    }
+  }
+  
+  /* Estilos para los Iconos en la Lista */
+  ion-icon {
+    color: #007bff; /* Color del icono */
+  }
+
+/* Estilos para los títulos */
+ion-title {
+    //color: #007bff; /* Color del texto de los títulos */
+    font-size: 1.8rem; /* Tamaño de fuente del título */
+    font-weight: bold; /* Negrita */
+    margin: 10px 0; /* Margen arriba y abajo */
+    //text-align: center; /* Centrar el texto */
+  }
+  
+  /* Estilos para las etiquetas de los formularios */
+  ion-label {
+    color: black; /* Color del texto de las etiquetas */
+    font-size: 1rem; /* Tamaño de fuente de las etiquetas */
+    margin-bottom: 5px; /* Margen debajo de las etiquetas */
+  }
+  
+  /* Estilos para los párrafos */
+  p {
+    color: black; /* Color del texto de los párrafos */
+    font-size: 0.95rem; /* Tamaño de fuente del párrafo */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+    margin: 0 0 15px 0; /* Margen inferior para separar párrafos */
+  }
+  
+  /* Estilos para el texto de los botones */
+  ion-button {
+    color: black; /* Color del texto del botón */
+    font-weight: bold; /* Negrita para los textos de los botones */
+  }
+  
+  /* Estilos para el texto de redirección */
+  .redirect-text {
+    color: #007bff; /* Color del texto del enlace */
+    margin: 10px 0; /* Margen superior e inferior */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    
+    &:hover {
+      text-decoration: underline; /* Subrayar el texto al pasar el mouse */
+    }
+  }
+
+
+  .button-container {
+    display: flex; /* Usar flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
+    margin: 20px 0; /* Espaciado superior e inferior */
+  }
+  
+  .centered-button {
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave al cambiar el fondo */
+  
+    &:hover {
+      background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    }
+  }
+  
+  

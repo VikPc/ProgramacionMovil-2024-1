@@ -1,0 +1,159 @@
+ <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Nuevo Usuario
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-card>
+
+    <ion-item>
+      <ion-label> <p> Nombre: </p>  </ion-label> 
+      <ion-input [(ngModel)]="newUser.nombre" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label><p> Edad: </p> </ion-label>
+      <ion-input [(ngModel)]="newUser.edad"></ion-input> 
+    </ion-item>
+
+    
+  </ion-card>
+
+  
+<!-- <button  (click)="redirigir()">
+  Inicio 
+</button> --> 
+
+  <div style="margin: 20px;">
+    <ion-button (click)="save()" expand="block" shape="round">
+      Guardar
+    </ion-button>
+  </div>
+
+  @if (cargando) {
+    <div style="text-align: center;">
+      <ion-spinner name="bubbles"></ion-spinner>
+    </div>
+  }
+
+<ion-list>
+  <ion-item *ngFor="let user of users; let i = index;">
+    <ion-label>
+     <p> Nombre: {{ user.nombre }}</p> 
+      <p>Edad: {{ user.edad }}</p>
+    </ion-label>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="edit(user)">
+        <ion-icon slot="icon-only" name="create"></ion-icon>
+      </ion-button>
+
+      <ion-button (click)="delete(user)">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-item>
+ </ion-list> 
+
+<div class="button-container">
+    <button (click)="casa()" class="centered-button">
+      Inicio
+    </button>
+   </div>
+</ion-content>  
+
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Nuevo Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="content-background">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Registrar Usuario</ion-title>
+    </ion-toolbar>
+  </ion-header>-->
+
+  <!-- Caja para el formulario de registro -->
+  <!-- <ion-card class="registration-card">
+    <ion-card-header>
+      <ion-card-title><p>Detalles del Usuario </p></ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating"><p>Nombre</p></ion-label>
+        <ion-input [(ngModel)]="newUser.nombre" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating"><p>Edad</p></ion-label>
+        <ion-input [(ngModel)]="newUser.edad" type="number" required></ion-input>
+      </ion-item>
+    </ion-card-content>
+    
+    <div class="button-container">
+      <ion-button (click)="save()" expand="block" shape="round">
+        Guardar
+      </ion-button>
+    </div>
+
+ 
+
+  </ion-card> -->
+
+   <!-- <ion-text class="redirect-text" (click)="redirigir()">
+      <p>Inicio</p>
+    </ion-text> -->
+<!-- <button (click)="casa()">Inicio
+
+</button> -->
+
+
+
+
+
+  <!-- Caja para el listado de usuarios -->
+  <!-- <ion-card class="user-list-card">
+    <ion-card-header>
+      <ion-card-title><p>Lista de Usuarios</p></ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let user of users; let i = index;">
+          <ion-label>
+            <p>Nombre: {{ user.nombre }}</p>
+            <p>Edad: {{ user.edad }}</p>
+          </ion-label>
+
+          <ion-buttons slot="end">
+            <ion-button (click)="edit(user)">
+              <ion-icon slot="icon-only" name="create"></ion-icon>
+            </ion-button>
+
+            <ion-button (click)="delete(user)">
+              <ion-icon slot="icon-only" name="trash"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card> -->
+
+  <!-- Spinner -->
+  <!-- <div *ngIf="cargando" class="spinner-container">
+    <ion-spinner name="bubbles"></ion-spinner>
+  </div>
+</ion-content> --> 

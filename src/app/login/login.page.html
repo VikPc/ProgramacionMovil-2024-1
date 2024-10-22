@@ -1,0 +1,31 @@
+<ion-content>
+  <div class="login-container">
+    <ion-card>
+      <ion-card-header>
+        <img src="assets/Match.png" alt="Logo" class="login-logo" />
+        <p class="registro-acceso">¡Bienvenido!</p>       
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-input placeholder="Usuario" [(ngModel)]="username"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Contraseña" [(ngModel)]="password" type="password"></ion-input>
+        </ion-item>
+        <div class="login-button-container">
+          <ion-button (click)="login()">Ingresar</ion-button>
+        </div>   
+        <ion-text class="forgot-password" (click)="goToRegistro()">
+          <p>¿Olvidaste tu contraseña?</p> 
+        </ion-text>
+        <div>
+          <ion-text class="forgot-password" (click)="redirigir()" >
+          <p>Registrar Usuario</p> 
+          </ion-text>
+          
+        
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

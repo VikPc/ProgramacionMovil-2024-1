@@ -1,0 +1,65 @@
+<!-- 
+
+ <div class="row m-1">
+  <h1>Buscar persona</h1>
+  <div class="col-6">
+    
+  </div>
+<button (click)="encontrar()">Usuarios Subcritos</button>   
+
+
+
+<div *ngIf="nombreBuscar.first">
+  <h1>Información de la Persona</h1>
+  <p>Nombre: {{ nombreBuscar.first }}</p>
+  <p>Apellido: {{ nombreBuscar.last }}</p>
+
+  <p *ngIf="ubicacionBuscar.city">Ciudad: {{ ubicacionBuscar.city }}</p>
+  <p *ngIf="ubicacionBuscar.state">Estado: {{ ubicacionBuscar.state }}</p>
+  <p *ngIf="ubicacionBuscar.country">País: {{ ubicacionBuscar.country }}</p>
+</div>
+<div *ngIf="!nombreBuscar.first">
+  <p>No se encontraron detalles de la persona.</p>
+</div>
+
+
+   -->
+
+   <ion-toolbar>
+    <ion-title>
+      Nuestros Usuarios 
+    </ion-title>
+  </ion-toolbar>
+
+
+   <ion-content class="ion-padding">
+
+    
+    <div class="button-container">
+      <ion-button expand="block" (click)="encontrar()">Usuarios Suscritos</ion-button>
+        <ion-button (click)="principal()">principal</ion-button>
+    </div>
+  
+    <ion-card *ngIf="nombreBuscar.first" class="info-card">
+      <ion-card-header>
+        <ion-card-title>Información de la Persona</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Nombre: {{ nombreBuscar.first }}</p>
+        <p>Apellido: {{ nombreBuscar.last }}</p>
+  
+        <p *ngIf="ubicacionBuscar.city">Ciudad: {{ ubicacionBuscar.city }}</p>
+        <p *ngIf="ubicacionBuscar.state">Estado: {{ ubicacionBuscar.state }}</p>
+        <p *ngIf="ubicacionBuscar.country">País: {{ ubicacionBuscar.country }}</p>
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card *ngIf="!nombreBuscar.first" class="info-card">
+      <ion-card-content>
+        <p>No se encontraron detalles de la persona.</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+
+
+  

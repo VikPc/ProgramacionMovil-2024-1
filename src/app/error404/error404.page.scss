@@ -1,0 +1,37 @@
+ion-header {
+    background-color: #F28627; // Cambia el color de fondo del encabezado
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); // Añade una sombra para profundidad
+  
+    ion-toolbar {
+      --background: transparent; // Mantiene la transparencia del toolbar
+      --color: #ff0000; // Color del texto en el título
+      text-align: center; // Centra el texto
+      font-weight: bold; // Hace que el texto sea más grueso
+      padding: 16px 0; // Ajusta el espaciado superior e inferior
+  
+      ion-title {
+        font-size: 1.5rem; // Ajusta el tamaño del texto
+        text-transform: uppercase; // Convierte el texto a mayúsculas
+      }
+    }
+  }
+  
+
+.error-container {
+    text-align: center;
+    margin-top: 20px;
+  
+    .error-image {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .error-message {
+      margin-top: 10px;
+      font-size: 1.2rem; // Ajusta el tamaño de la fuente según lo desees
+      color: #ff0000; // Cambia el color del texto, si lo deseas
+      font-weight: bold; // Añade un peso de fuente más grueso
+    }
+  }
+  
+  
